@@ -23,17 +23,17 @@ public class PersonRest {
 	//private PersonService personService;
 	private PersonService personService;
 	
-	@GetMapping("/person/findbyemail/{email}")
+	@GetMapping("/ws/person/findbyemail/{email}")
 	public List<Person> findByEmail(@PathVariable String email) {
 		return personService.findByEmail(email);
 	}
 	
-	@GetMapping("/person/findbyid/{id}")
+	@GetMapping("/ws/person/findbyid/{id}")
 	public Person findById(@PathVariable Long id) {
 		return personService.findById(id);
 	}
 	
-//	@DeleteMapping("/person/remove")
+//	@DeleteMapping("/ws/person/remove")
 //	public String removePerson(Person person) {
 //		try {
 //			
@@ -46,12 +46,12 @@ public class PersonRest {
 //		
 //	}
 	
-	@PostMapping("/person/create")
+	@PostMapping("/ws/person/create")
 	public Person savePerson(@RequestBody Person person) {
 		return personService.savePerson(person);
 	}
 	
-	@PutMapping("/person/update")
+	@PutMapping("/ws/person/update")
 	public Person updatePerson(@RequestBody Person person) {
 		return personService.savePerson(person);
 	}
