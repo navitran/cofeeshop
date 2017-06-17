@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import edu.mum.coffee.domain.Person;
@@ -23,8 +24,8 @@ public class PersonRest {
 	//private PersonService personService;
 	private PersonService personService;
 	
-	@GetMapping("/ws/person/findbyemail/{email}")
-	public List<Person> findByEmail(@PathVariable String email) {
+	@GetMapping("/ws/person/findbyemail")
+	public List<Person> findByEmail(@RequestParam(value = "email") String email) {
 		return personService.findByEmail(email);
 	}
 	
