@@ -24,14 +24,14 @@ public class OrderRest {
 	@Autowired
 	private OrderService orderService;
 	
-	@GetMapping("ws/order/findall")
+	@GetMapping("/ws/order/findall")
 	public List<Order> findAll() {
 		return orderService.findAll();
 	}
 	
 	
 	
-	@PostMapping("ws/order/create")
+	@PostMapping("/ws/order/create")
 	public Order save(@RequestBody Order order) {
 		return orderService.save(order);
 	}
