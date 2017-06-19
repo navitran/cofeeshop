@@ -6,9 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import edu.mum.coffee.domain.Person;
 import edu.mum.coffee.domain.User;
-import edu.mum.coffee.repository.PersonRepository;
+
 import edu.mum.coffee.repository.UserRepository;
 
 @Service
@@ -30,9 +29,10 @@ public class UserService {
 		return userRepository.findOne(id);
 	}
 
-	public List<User> findAll(){
+	public List<User> findAll() {
 		return userRepository.findAll();
 	}
+
 	public void delete(User user) {
 		userRepository.delete(user);
 	}

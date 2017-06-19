@@ -1,10 +1,14 @@
 package edu.mum.coffee.domain;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "UserTable")
 public class User {
 	@Id
 	@GeneratedValue
@@ -16,7 +20,7 @@ public class User {
 	@OneToOne(cascade = CascadeType.ALL)
 	private Person person;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 

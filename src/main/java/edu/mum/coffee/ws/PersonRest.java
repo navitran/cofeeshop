@@ -25,7 +25,7 @@ public class PersonRest {
 	private PersonService personService;
 	
 	@GetMapping("/ws/person/findbyemail")
-	public List<Person> findByEmail(@RequestParam(value = "email") String email) {
+	public List<Person> findByEmail(@RequestParam("email") String email) {
 		return personService.findByEmail(email);
 	}
 	
