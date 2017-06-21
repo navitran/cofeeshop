@@ -12,26 +12,33 @@
 </head>
 <body>
 	<h3>Person management</h3>
+	<a href="/secure">Home</a>
+	<a href="person/addperson">Add New Person</a>
 
-	<table border =1>
+	<table border=1>
 		<tr>
-		<td>ID</td>
-		<td>First name</td>
-		<td>Last name</td>
-		<td>Email </td>
-		<td>Address </td>
-		<td>Phone </td>
-		
-		
+			<td>ID</td>
+			<td>First name</td>
+			<td>Last name</td>
+			<td>Email</td>
+			<td>Phone</td>
+			<td>City</td>
+			<td>State</td>
+			<td>Country</td>
+			<td>Zip code</td>
+
 		</tr>
-		<c:forEach var="p" items="${persons}">
+		<c:forEach var="person" items="${persons}">
 			<tr>
-				<td>${p.id}</td>
-				<td>${p.firstName}</td>
-				<td>${p.lastName}</td>
-				<td>${p.email}</td>
-				<td>${p.address}</td>
-				<td>${p.phone}</td>
+				<td>${person.id}</td>
+				<td>${person.firstName}</td>
+				<td>${person.lastName}</td>
+				<td>${person.email}</td>
+				<td>${person.phone}</td>
+				<td>${person.address.city}</td>
+				<td>${person.address.state}</td>
+				<td>${person.address.country}</td>
+				<td>${person.address.zipcode}</td>
 			</tr>
 		</c:forEach>
 	</table>

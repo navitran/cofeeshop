@@ -10,7 +10,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>You are in!</title>
 </head>
-<body><h1>You made it!</h1>
+<body><h1>Coffee shop administrator page</h1>
+
+<h3>Person management</h3>
+<a href="person/">View persons</a>
+<a href="person/addperson">Add New Person</a>
+
+
+<h3>Product management</h3>
+<a href="product/">View products</a>
+<a href="product/addproduct">Add New Product</a>
+<a href="product/deleteproduct">Update Product</a>
+<a href="product/updateproduct">Delete Product</a>
+
+<h3>Order management</h3>
+<a href="order/">View orders</a>
+
+
+<br>
 <a href="<c:url value="/logout" />"> Now logout </a>
 
 </body>
