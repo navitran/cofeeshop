@@ -17,6 +17,7 @@ Part A: 100% completed.  Provide a REST API to perform the operations below.
  Part B: 100% completed. Develope a Java client application or web application to demonstrate/test how to consume your REST services
       In my example, I developer java client application to consume Person web service.
       The program is located edu.mum.coffee.clientws
+      
  Part C: 90% completed (has not done security part): Provide a web application
       Place orders
       Update their personal information (Users will be related to persons by email)
