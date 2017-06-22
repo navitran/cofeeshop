@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import edu.mum.coffee.service.OrderService;
 
@@ -18,6 +19,12 @@ public class OrderController {
 	public String findAll(Model model) {
 		model.addAttribute("orders", orderService.findAll());
 		return "listoforder";
+	}
+	
+	@GetMapping({ "/order/detail/{id}" })
+	public String detail(@PathVariable int id, Model model) {
+		model.addAttribute("orderlines", orderService.findById(id).getOrderLines());
+		return "orderdetails";
 	}
 
 }

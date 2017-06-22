@@ -12,7 +12,7 @@
 </head>
 <body>
 	<h3>Order management</h3>
-	<a href="/secure">Order </a>
+	<a href="/secure">Home </a>
 
 	<table border=1>
 		<tr>
@@ -20,6 +20,7 @@
 			<td>Order Date</td>
 			<td>Person First name</td>
 			<td>Person Last name</td>
+			<td>Order detail</td>
 
 		</tr>
 		<c:forEach var="order" items="${orders}">
@@ -28,6 +29,7 @@
 				<td>${order.orderDate}</td>
 				<td>${order.person.firstName}</td>
 				<td>${order.person.lastName}</td>
+				<td><a href="/order/detail/${order.id}">Details</a></td>
 			</tr>
 		</c:forEach>
 
