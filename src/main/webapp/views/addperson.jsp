@@ -49,14 +49,6 @@
 			</tr>
 
 
-			<tr>
-				<td>test code:</td>
-				<td><select name="productType">
-				<option value="DINNER">DINNER</option>
-				<option value="LUNCH">LUNCH</option>
-				<option value="BREAKFAST">BREAKFAST</option>
-			</select></td>
-			</tr>
 
 		</table>
 

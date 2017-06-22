@@ -5,7 +5,7 @@ My project Coffee shop github
 
 https://github.com/navitran/cofeeshop
 
-I completed all functionalitites the project required except the part security.
+I completed all functionalities of the project required except the part security.
 
 Part A: 100% completed.  Provide a REST API to perform the operations below.
       Create, List, Delete, Update products
@@ -14,7 +14,7 @@ Part A: 100% completed.  Provide a REST API to perform the operations below.
 
       Create and List orders
 
- Part B: 100% completed. Develope a Java client application or web application to demonstrate/test how to consume your REST services
+ Part B: 100% completed. Develop a Java client application or web application to demonstrate/test how to consume your REST services
       In my example, I developer java client application to consume Person web service.
       The program is located edu.mum.coffee.clientws
       

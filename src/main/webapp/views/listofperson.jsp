@@ -13,8 +13,7 @@
 <body>
 	<h3>Person management</h3>
 	<a href="/secure">Home</a>
-	<a href="person/addperson">Add New Person</a>
-
+	<a href="/person/addperson">Add New Person</a>
 	<table border=1>
 		<tr>
 			<td>ID</td>
