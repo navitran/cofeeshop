@@ -12,8 +12,16 @@ import javax.persistence.Table;
 public class User {
 	@Id
 	@GeneratedValue
-	private long id;
-	private String email;
+	private int id;
+	private String email;;
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	private String password;
 	private String userRole;
 
@@ -26,14 +34,6 @@ public class User {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 	public String getPassword() {

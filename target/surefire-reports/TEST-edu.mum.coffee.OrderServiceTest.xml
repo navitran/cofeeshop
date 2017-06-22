@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.mum.coffee.OrderServiceTest" time="5.004" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="edu.mum.coffee.OrderServiceTest" time="11.479" tests="6" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Sony\Documents\workspace-sts-3.8.4.RELEASE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8230225823343587434.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Sony\Documents\workspace-sts-3.8.4.RELEASE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2357178873276708956.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_102\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Users\Sony\AppData\Local\Programs\Python\Python36-32;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Sony\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Sony\AppData\Local\Programs\Python\Python36-32\;C:\Program Files (x86)\scala\bin;E:\data\books\python\exercises\geckodriver-v0.14.0-win64;E:\data\books\python\exercises\chromedriver_win32;G:\code\apache-maven-3.5.0\bin;C:\Users\Sony\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,10 +60,151 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testFindByPerson" classname="edu.mum.coffee.OrderServiceTest" time="1.946"/>
-  <testcase name="testFindByProduct" classname="edu.mum.coffee.OrderServiceTest" time="0.758"/>
-  <testcase name="testFindAll" classname="edu.mum.coffee.OrderServiceTest" time="0.661"/>
-  <testcase name="testSave" classname="edu.mum.coffee.OrderServiceTest" time="0.702"/>
-  <testcase name="testFindByDate" classname="edu.mum.coffee.OrderServiceTest" time="0.588"/>
-  <testcase name="testFindById" classname="edu.mum.coffee.OrderServiceTest" time="0.349"/>
+  <testcase name="testFindByPerson" classname="edu.mum.coffee.OrderServiceTest" time="5.651"/>
+  <testcase name="testFindByProduct" classname="edu.mum.coffee.OrderServiceTest" time="1.797"/>
+  <testcase name="testFindAll" classname="edu.mum.coffee.OrderServiceTest" time="1.256"/>
+  <testcase name="testSave" classname="edu.mum.coffee.OrderServiceTest" time="1.075"/>
+  <testcase name="testFindByDate" classname="edu.mum.coffee.OrderServiceTest" time="1.247"/>
+  <testcase name="testFindById" classname="edu.mum.coffee.OrderServiceTest" time="0.453">
+    <error message="could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement" type="org.springframework.dao.InvalidDataAccessResourceUsageException"><![CDATA[org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2501)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at sun.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy112.executeUpdate(Unknown Source)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:42)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2855)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3426)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:619)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:273)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:254)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:299)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:272)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:178)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:109)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:775)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:748)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:753)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.persist(AbstractEntityManagerImpl.java:1146)
+	at sun.reflect.GeneratedMethodAccessor93.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:298)
+	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:508)
+	at sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:504)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:489)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:461)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy100.save(Unknown Source)
+	at edu.mum.coffee.service.ProductService.save(ProductService.java:21)
+	at edu.mum.coffee.service.ProductService$$FastClassBySpringCGLIB$$60d18700.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at edu.mum.coffee.service.ProductService$$EnhancerBySpringCGLIB$$514885ef.save(<generated>)
+	at edu.mum.coffee.OrderServiceTest.createProducts(OrderServiceTest.java:217)
+	at edu.mum.coffee.OrderServiceTest.setUp(OrderServiceTest.java:53)
+]]></error>
+    <system-out><![CDATA[2017-06-22 08:40:51.933  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:51.933 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:51.945  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:51.945 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:51.973  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:51.974 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:51.979  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:51.979 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:51.982  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:51.982 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:51.995  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:51.996 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.003  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.003 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.017  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.017 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.022  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.022 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.025  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.025 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.029  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.029 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.032  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.032 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.035  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.035 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.037  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.038 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.041  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.041 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.044  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.044 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.047  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.047 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.049  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.049 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.052  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.052 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.055  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.055 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.058  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.058 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.product' doesn't exist
+2017-06-22 08:40:52.061  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.061 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.person' doesn't exist
+2017-06-22 08:40:52.061  INFO 6376 --- [           main] o.h.e.internal.DefaultLoadEventListener  : HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2017-06-22 08:40:52.064  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.065 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.person' doesn't exist
+2017-06-22 08:40:52.065  INFO 6376 --- [           main] o.h.e.internal.DefaultLoadEventListener  : HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2017-06-22 08:40:52.068  WARN 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-06-22 08:40:52.068 ERROR 6376 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'db_coffee.person' doesn't exist
+2017-06-22 08:40:52.068  INFO 6376 --- [           main] o.h.e.internal.DefaultLoadEventListener  : HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+]]></system-out>
+  </testcase>
 </testsuite>

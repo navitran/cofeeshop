@@ -11,10 +11,14 @@ edu\mum\coffee\ws\PersonRest.class
 edu\mum\coffee\clientws\ClientRest.class
 edu\mum\coffee\repository\OrderRepository.class
 edu\mum\coffee\ws\OrderRest.class
+edu\mum\coffee\controller\UserController.class
+edu\mum\coffee\controller\PersonController.class
 edu\mum\coffee\domain\Order.class
 edu\mum\coffee\domain\Person.class
+edu\mum\coffee\controller\ProductController.class
 edu\mum\coffee\repository\PersonRepository.class
 edu\mum\coffee\controller\HomeController.class
+edu\mum\coffee\controller\OrderController.class
 edu\mum\coffee\domain\Orderline.class
 edu\mum\coffee\repository\ProductRepository.class
 edu\mum\coffee\repository\UserRepository.class

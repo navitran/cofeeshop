@@ -15,6 +15,12 @@
 
 	<form action="/user/add" method="post">
 		<table>
+		
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" /></td>
+			</tr>
+			
 			<tr>
 				<td>First Name:</td>
 				<td><input type="text" name="firstName" /></td>
@@ -48,18 +54,8 @@
 				<td><input type="text" name="zipcode" /></td>
 			</tr>
 
-
-			<tr>
-				<td>test code:</td>
-				<td><select name="productType">
-				<option value="DINNER">DINNER</option>
-				<option value="LUNCH">LUNCH</option>
-				<option value="BREAKFAST">BREAKFAST</option>
-			</select></td>
-			</tr>
-
 		</table>
 
-		<input type="submit" value="Save Data" />
+		<input type="submit" value="Save" />
 </body>
 </html>
