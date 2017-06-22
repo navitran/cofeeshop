@@ -17,6 +17,8 @@
 	<p>
 		The only user is "<b>super</b>" and the password is "<b>pw</b>"
 	<p>
-		<a href="<c:url value="/secure" />"> Go to Secure Area </a>
+		<a href="/secure">Register</a> 
+		<a href="/product/">Product</a> <a
+			href="<c:url value="/secure" />"> Administrator </a>
 </body>
 </html>

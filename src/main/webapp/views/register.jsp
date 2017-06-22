@@ -8,12 +8,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>List of persons</title>
+<title>Register User</title>
 </head>
 <body>
-	<h3>Add Person</h3>
+	<h3>Register User</h3>
 
-	<form action="/person/addperson" method="post">
+	<form action="/user/add" method="post">
 		<table>
 			<tr>
 				<td>First Name:</td>
@@ -60,9 +60,6 @@
 
 		</table>
 
-		<input type="submit" value="Save" />
-
-	</form>
-
+		<input type="submit" value="Save Data" />
 </body>
 </html>
